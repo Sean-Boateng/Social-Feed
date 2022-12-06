@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Post from './Components/Post/Post';
 
 
 function App() {
@@ -7,19 +8,7 @@ function App() {
 
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Posts</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>Candy</tr>
-          <tr>Sugar</tr>
-          <tr>Sweet</tr>
-          <tr></tr>
-        </tbody>
-      </table>
+      <Post parentEntries={entries} />
     </div>
   );
 }
