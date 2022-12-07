@@ -1,10 +1,12 @@
+import React, { useState } from 'react';
 
 const Post = (props) => {
     return ( 
+        
         <table>
         <thead>
           <tr>
-            <th>Posts</th>
+            <th>Posts Timeline</th>
           </tr>
         </thead>
         <tbody>
@@ -13,7 +15,7 @@ const Post = (props) => {
               <tr key={index}>
                 <td key={index+1}></td>
 
-                <td>{entry.name}<br/>{entry.post}</td>
+                <td>{entry.name} : {entry.date}</td>
               </tr>
             );
           })}
