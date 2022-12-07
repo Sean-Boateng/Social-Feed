@@ -13,14 +13,21 @@ function App() {
   }
 
 
-  return (
-    <div>
-      <CreatePostForm AddNewEntryProperty={addNewEntry} />
-      <Post parentEntries={entries} />
-      <PostList parentEntries={entries}/>
+  return (   
+     <div>
+          <CreatePostForm AddNewEntryProperty={addNewEntry} />                  
+          <Post parentEntries={entries} />
+
+          <PostList parentEntries={entries}/>
+        
       
-    </div>
+
+    
+   
+   </div>
+  
   );
 }
 
 export default App;
+

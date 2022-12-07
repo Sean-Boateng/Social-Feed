@@ -16,7 +16,7 @@ const PostList = (props) => {
               <tr key={index}>
                 <td key={index+1}></td>
 
-                <td>{entry.name} : {entry.post}</td>
+                <td>{entry.name} : {entry.post}<br/></td>
               </tr>
             );
           })}
