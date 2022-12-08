@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const PostList = (props) => {
     return ( 
         
-        <table>
+        <table className='table'>
         <thead>
           <tr>
             <th>Posts</th>
@@ -16,7 +16,7 @@ const PostList = (props) => {
               <tr key={index}>
                 <td key={index+1}></td>
 
-                <td>{entry.name} : {entry.post}<br/></td>
+                <td>{entry.name} :<br/> {entry.post} - {entry.date}<br/> <button >Like</button> <button>Dislike</button><br/></td>
               </tr>
             );
           })}

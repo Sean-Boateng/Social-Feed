@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Post = (props) => {
     return ( 
         
-        <table>
+        <table className='table'>
         <thead>
           <tr>
             <th>Posts Timeline</th>
